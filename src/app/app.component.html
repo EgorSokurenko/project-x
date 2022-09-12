@@ -1,0 +1,17 @@
+<div class="col">
+  <input class="form-control w-25" (change)="updateSequence($event)" [value]="FIND_SEQUENCE">
+</div>
+<div class="col">
+  <div class="row">
+    <div class="col">
+      <h1>Similarity 100%</h1>
+      <span class="ml-5 text-decoration-underline" style="font-size: 1.5rem;font-weight: 700; ">Count: {{count.length}}</span>
+    </div>
+  </div>
+  <div  style="display:block; width:600px;">
+    <div style="display:block; width:600px;" >
+      <canvas #generalChart [id]="'myChart'"></canvas>
+    </div>
+  </div>
+</div>
+
